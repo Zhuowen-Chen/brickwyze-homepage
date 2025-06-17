@@ -13,7 +13,7 @@ const items = [
 const WhoWeAre = () => {
     return (
         <section className="who-we-are">
-            <h2 className="who-we-are-title">Who We’re Here For</h2>
+            <h2 className="who-we-are-title">Who We're Here For</h2>
             <p className="who-we-are-description">
             We support founders who want to build smart from day one — not just with ideas, but with location intelligence. BrickWyze is built for entrepreneurs seeking to understand the factors they can’t control, so they can launch in places that set them up to succeed.
             </p>
