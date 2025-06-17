@@ -1,23 +1,23 @@
 // src/App.jsx
 import './App.css';
-import Navbar from './components/Navbar';
+// import Navbar from './components/Navbar';
 import Hero from './components/Hero';
-import WhoWeAre from './components/WhoWeAre';
-import Welcome from './components/Welcome';
-import WhyChooseUs from './components/WhyChooseUs';
-import HowItWorks from './components/HowItWorks';
-import Footer from './components/Footer';
+// import WhoWeAre from './components/WhoWeAre';
+// import Welcome from './components/Welcome';
+// import WhyChooseUs from './components/WhyChooseUs';
+// import HowItWorks from './components/HowItWorks';
+// import Footer from './components/Footer';
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
+      {/* <Navbar /> */}
       <Hero />
-      <WhoWeAre />
+      {/* <WhoWeAre />
       <Welcome />
       <WhyChooseUs />
       <HowItWorks />
-      <Footer />
+      <Footer /> */}
     </div>
   );
 }
