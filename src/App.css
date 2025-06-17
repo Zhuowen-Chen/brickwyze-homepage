@@ -1,10 +1,10 @@
-/* 基础重置 */
+/* Base CSS */
 body {
   margin: 0;
   font-family: 'Arial', sans-serif;
 }
 
-/* src/components/Hero */
+/* Hero */
 .hero {
   position: relative;
   text-align: center;
@@ -33,6 +33,36 @@ body {
 
 .map-button:hover {
   background: #0052CC;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav-left, .nav-right {
+  display: flex;
+  gap: 2rem; /* 控制链接间距 */
+}
+
+.nav-center .logo {
+  height: 40px; /* 根据设计图调整 */
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.login-btn {
+  color: #0066FF; /* 设计图中 Login/Register 可能是突出颜色 */
+  font-weight: bold;
 }
 
 /* 其他组件样式... */

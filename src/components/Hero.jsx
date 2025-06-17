@@ -13,7 +13,7 @@ const Hero = () => {
         className="map-button" 
         onClick={() => { /* 后续添加跳转逻辑 */ }}
         >
-            
+
         Hit the Map
       </button>
     </section>

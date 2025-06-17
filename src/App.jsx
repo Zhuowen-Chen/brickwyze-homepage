@@ -1,6 +1,6 @@
 // src/App.jsx
 import './App.css';
-// import Navbar from './components/Navbar';
+import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 // import WhoWeAre from './components/WhoWeAre';
 // import Welcome from './components/Welcome';
@@ -11,7 +11,7 @@ import Hero from './components/Hero';
 function App() {
   return (
     <div className="App">
-      {/* <Navbar /> */}
+      <Navbar />
       <Hero />
       {/* <WhoWeAre />
       <Welcome />
