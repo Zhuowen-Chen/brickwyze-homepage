@@ -4,10 +4,35 @@ body {
   font-family: 'Arial', sans-serif;
 }
 
+/* src/components/Hero */
 .hero {
+  position: relative;
   text-align: center;
   padding: 4rem 0;
-  background: url('./assets/images/Background\ .jpg') no-repeat center;
+}
+
+.hero-background {
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+}
+
+.map-button {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 12px 24px;
+  background: #0066FF;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.map-button:hover {
+  background: #0052CC;
 }
 
 /* 其他组件样式... */
