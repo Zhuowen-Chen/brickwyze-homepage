@@ -1,9 +1,9 @@
 import React from 'react';
-import logo from '../assets/images/logo.png';
+import logo from '../assets/images/logo1.png';
 
 const Navbar = () => {
     return (
-        <nav className="navbar">
+        <nav style={{ fontFamily: "'Simonetta', serif" }} className="navbar">
             {/* 左侧导航链接 */}
             <div className="nav-left">
                 <a href="/">Home</a>
