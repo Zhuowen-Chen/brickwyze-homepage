@@ -4,6 +4,38 @@ body {
   font-family: 'Arial', sans-serif;
 }
 
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav-left, .nav-right {
+  display: flex;
+  gap: 2rem; /* 控制链接间距 */
+}
+
+.nav-center .logo {
+  height: 40px;
+  /* width: 100%;
+  object-fit: cover; */
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.login-btn {
+  color: #FE4A2C; /* 设计图中 Login/Register 可能是突出颜色 */
+  font-weight: bold;
+}
+
 /* Hero */
 .hero {
   position: relative;
@@ -53,7 +85,7 @@ body {
 .hero-content h2 {
   font-family: 'Abril Fatface', serif;
   font-size: clamp(15px, 35px, 45px);
-  color: white;
+  color: #FFFFFF;
   font-weight: bold;
   text-shadow: 3px 2px 2px rgba(0, 0, 0, 0.3);
   margin: 0;
@@ -75,39 +107,7 @@ body {
 }
 
 .map-button:hover {
-  background: #fb8f7e;
-}
-
-/* Navbar */
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
-  background: white;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.nav-left, .nav-right {
-  display: flex;
-  gap: 2rem; /* 控制链接间距 */
-}
-
-.nav-center .logo {
-  height: 40px;
-  /* width: 100%;
-  object-fit: cover; */
-}
-
-a {
-  text-decoration: none;
-  color: #333;
-  font-weight: 500;
-}
-
-.login-btn {
-  color: #FE4A2C; /* 设计图中 Login/Register 可能是突出颜色 */
-  font-weight: bold;
+  background: #fbb1a6;
 }
 
 /* WhoWeAre */
@@ -118,8 +118,9 @@ a {
 }
 
 .who-we-are-title {
-  font-size: 2rem;
-  font-weight: bold;
+  font-size: 2.4rem;
+  font-weight: 400;
+  font-family: 'Antonio', sans-serif;
   position: relative;
   display: inline-block;
   padding-bottom: 0.5rem; /* 给下划线留点空间 */
@@ -128,20 +129,23 @@ a {
 .who-we-are-title::after {
   content: "";
   position: absolute;
-  left: 0;
+  left: 25%;
   bottom: 0;
-  width: 130px; /* 👈 控制下划线长度 */
+  width: 160px; /* 👈 控制下划线长度 */
   height: 3px;
   background-color: #FF4A2E;
 }
 
 
 .who-we-are-description {
-  max-width: 650px;
+  font-family: 'Antonio', sans-serif;
+  font-weight: 300;
+  max-width: 950px;
   margin: 0 auto 2rem auto;
-  font-size: 1rem;
-  color: #444;
+  font-size: 1.2rem;
+  color: #525252;
   line-height: 1.6;
+  text-transform: uppercase;
 }
 
 .who-we-are-icons {
@@ -153,6 +157,7 @@ a {
 }
 
 .icon-item {
+  font-family: 'Antonio', sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -166,7 +171,7 @@ a {
 
 .icon-label {
   font-size: 0.9rem;
-  color: #333;
+  color: #000000;
 }
 
 
