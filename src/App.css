@@ -38,21 +38,24 @@ body {
   padding: 20px;
 }
 
-/* h1 */
+/* hero h1 */
 .hero-content h1 {
   font-family: 'Abril Fatface', serif;
-  font-size: 45px;
+  font-size: 55px;
+  font-size: clamp(25px, 50px, 65px); /* 在 25px 和 55px 之间动态变化 */
   color: black;
-  text-shadow: 2px 1px 3px rgba(0, 0, 0, 0.3);
+  font-weight: bold;
+  text-shadow: 3px 2px 2px rgba(0, 0, 0, 0.3);
   margin: 0;
 }
 
-/* h2 */
+/* hero h2 */
 .hero-content h2 {
   font-family: 'Abril Fatface', serif;
-  font-size: 30px;
+  font-size: clamp(15px, 35px, 45px);
   color: white;
-  text-shadow: 4px 3px 4px rgba(0, 0, 0, 0.4);
+  font-weight: bold;
+  text-shadow: 3px 2px 2px rgba(0, 0, 0, 0.3);
   margin: 0;
 }
 
@@ -63,7 +66,7 @@ body {
   background: #FF4A2E;
   color: black;
   border: none;
-  border-radius: 4px;
+  border-radius: 10px;
   font-family: 'Abril Fatface', serif;
   font-size: 16px;
   font-weight: bold;
@@ -106,5 +109,65 @@ a {
   color: #FE4A2C; /* 设计图中 Login/Register 可能是突出颜色 */
   font-weight: bold;
 }
+
+/* WhoWeAre */
+.who-we-are {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.who-we-are-title {
+  font-size: 2rem;
+  font-weight: bold;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 0.5rem; /* 给下划线留点空间 */
+}
+
+.who-we-are-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 130px; /* 👈 控制下划线长度 */
+  height: 3px;
+  background-color: #FF4A2E;
+}
+
+
+.who-we-are-description {
+  max-width: 650px;
+  margin: 0 auto 2rem auto;
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.6;
+}
+
+.who-we-are-icons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 1.5rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.icon-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon-img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 0.5rem;
+}
+
+.icon-label {
+  font-size: 0.9rem;
+  color: #333;
+}
+
 
 /* 其他组件样式... */
