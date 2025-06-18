@@ -12,7 +12,7 @@ const Hero = () => {
         
         <button 
             className="map-button" 
-            onClick={() => { /* 后续添加跳转逻辑 */ }}
+            onClick={() => { /* Add redirection logic later */ }}
         >
 
             Hit the Map
