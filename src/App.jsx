@@ -1,4 +1,4 @@
-// 开启react: bash -> cd brickwyze-homepage -> npm start
+// start react: bash -> cd brickwyze-homepage -> npm start
 
 // src/App.jsx
 import './App.css';
