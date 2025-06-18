@@ -323,44 +323,93 @@ a {
 
 /* Why Choose Us */
 .whychooseus-section {
+  padding: 100px 40px;
+  font-family: 'Enriqueta', serif;
+  background-color: #f9f9f9;
+}
+
+.why-title {
+  font-family: 'Antonio', sans-serif;
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 15px;
+  color: #000;
+  position: relative;
+}
+
+.underline {
+  width: 190px; 
+  height: 3px;
+  background-color: #FF4A2E;
+  margin: 0 auto 40px auto;
+}
+
+.card-container {
   display: flex;
-  justify-content: space-between;
-  padding: 50px;
-  gap: 20px;
+  justify-content: center; 
+  gap: 34px;
+  flex-wrap: wrap;
+  padding-top: 20px;
 }
 
-.whychooseus-card {
-  width: 30%;
-  background-color: #fff;
-  border-radius: 16px;
-  padding: 24px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  text-align: left;
-  transition: transform 0.3s;
+.why-card {
+  position: relative;
+  width: 100%;
+  max-width: 360px;
+  aspect-ratio: 2 / 3;
+  border-radius: 31px;
+  overflow: hidden;
+  box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
 }
 
-.whychooseus-card:hover {
+.why-card:hover {
   transform: translateY(-5px);
 }
 
-.card-image {
+.card-background {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: auto;
-  border-radius: 12px;
-  margin-bottom: 16px;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.4;
+  z-index: 0;
+}
+
+.card-content {
+  position: relative;
+  z-index: 1;
+  padding: 24px;
+  background-color: transparent;
+  color: #000;
+}
+
+.card-content h3 {
+  font-size: 22px;
+  margin-bottom: 40px;
+}
+
+.card-content p {
+  font-size: 15px;
+  line-height: 1.5;
+  margin-bottom: 40px;
+}
+
+.card-content a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #000;
+  display: inline-flex;
+  align-items: center;
 }
 
 .arrow-icon {
-  width: 16px;
-  height: 16px;
+  width: 20px;
+  height: 20px;
   margin-left: 6px;
-  vertical-align: middle;
-}
-
-a {
-  color: #000;
-  text-decoration: none;
-  font-weight: 500;
 }
 
 
