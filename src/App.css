@@ -175,17 +175,15 @@ a {
 }
 
 /* Welcome */
-body {
+
+.welcome-section {
   background-color: #FFD9D3;
   margin: 0;
   font-family: 'Antonio', serif;
-}
-
-.welcome-section {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
   padding: 4rem 2rem;
   position: relative;
@@ -195,10 +193,11 @@ body {
   width: 45%;
   background-color: #FFF;
   padding: 2.5rem;
-  box-shadow: 3px 2px 4px #FF4A2E;
+  box-shadow: 4px 3px 4px #FF4A2E;
   position: relative;
   z-index: 2;
   margin-right: -10%; /* 让卡片向右延伸覆盖部分图片 */
+  margin-left: 8rem;
 }
 
 .welcome-card h1 {
@@ -247,6 +246,8 @@ body {
   position: relative;
   z-index: 1;
   margin-left: auto;
+  margin-right: 5rem;
+
 }
 
 .welcome-image {
@@ -318,6 +319,48 @@ body {
     width: 60px;
     height: 3px;
   }
+}
+
+/* Why Choose Us */
+.whychooseus-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+  gap: 20px;
+}
+
+.whychooseus-card {
+  width: 30%;
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: left;
+  transition: transform 0.3s;
+}
+
+.whychooseus-card:hover {
+  transform: translateY(-5px);
+}
+
+.card-image {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: 16px;
+}
+
+.arrow-icon {
+  width: 16px;
+  height: 16px;
+  margin-left: 6px;
+  vertical-align: middle;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+  font-weight: 500;
 }
 
 

@@ -6,7 +6,7 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import WhoWeAre from './components/WhoWeAre';
 import Welcome from './components/Welcome';
-// import WhyChooseUs from './components/WhyChooseUs';
+import WhyChooseUs from './components/WhyChooseUs';
 // import HowItWorks from './components/HowItWorks';
 // import Footer from './components/Footer';
 
@@ -17,8 +17,8 @@ function App() {
       <Hero />
       <WhoWeAre />
       <Welcome />
-      {/* <WhyChooseUs />
-      <HowItWorks />
+      <WhyChooseUs />
+      {/* <HowItWorks />
       <Footer /> */}
     </div>
   );
