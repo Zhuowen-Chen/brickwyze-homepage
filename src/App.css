@@ -174,5 +174,60 @@ a {
   color: #000000;
 }
 
+/* Welcome */
+.welcome-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFD9D3; 
+  padding: 60px 40px;
+}
+
+.welcome-card {
+  background-color: white;
+  padding: 40px;
+  max-width: 600px;
+  box-shadow: 5px 3px 4px #FF4A2E;
+  margin-right: 30px;
+}
+
+.welcome-card h1 {
+  font-family: 'Antonio' serif;
+  font-size: 32px;
+  color: black;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.welcome-card .highlight {
+  color: #FF4A2E;
+  position: relative;
+}
+
+.welcome-card .highlight::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #FF4A2E;
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+}
+
+.welcome-card p {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.welcome-image img {
+  max-width: 450px;
+  width: 100%;
+  height: auto;
+}
+
 
 /* 其他组件样式... */
