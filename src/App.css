@@ -123,15 +123,15 @@ a {
   font-family: 'Antonio', sans-serif;
   position: relative;
   display: inline-block;
-  padding-bottom: 0.5rem; /* 给下划线留点空间 */
+  padding-bottom: 12px;
 }
 
 .who-we-are-title::after {
   content: "";
   position: absolute;
-  left: 25%;
+  left: 26%;
   bottom: 0;
-  width: 160px; /* 👈 控制下划线长度 */
+  width: 150px;
   height: 3px;
   background-color: #FF4A2E;
 }
@@ -175,7 +175,6 @@ a {
 }
 
 /* Welcome */
-
 .welcome-section {
   background-color: #FFD9D3;
   margin: 0;
@@ -347,7 +346,7 @@ a {
 .card-container {
   display: flex;
   justify-content: center; 
-  gap: 34px;
+  gap: 60px;
   flex-wrap: wrap;
   padding-top: 20px;
 }
@@ -382,20 +381,22 @@ a {
 .card-content {
   position: relative;
   z-index: 1;
-  padding: 24px;
+  padding: 40px;
   background-color: transparent;
   color: #000;
 }
 
 .card-content h3 {
-  font-size: 22px;
-  margin-bottom: 40px;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 25px;
 }
 
 .card-content p {
-  font-size: 15px;
+  font-size: 14px;
+  text-align: justify;
   line-height: 1.5;
-  margin-bottom: 40px;
+  margin-bottom: 25px;
 }
 
 .card-content a {
