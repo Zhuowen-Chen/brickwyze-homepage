@@ -7,7 +7,7 @@ import Hero from './components/Hero';
 import WhoWeAre from './components/WhoWeAre';
 import Welcome from './components/Welcome';
 import WhyChooseUs from './components/WhyChooseUs';
-// import HowItWorks from './components/HowItWorks';
+import HowItWorks from './components/HowItWorks';
 // import Footer from './components/Footer';
 
 function App() {
@@ -18,8 +18,8 @@ function App() {
       <WhoWeAre />
       <Welcome />
       <WhyChooseUs />
-      {/* <HowItWorks />
-      <Footer /> */}
+      <HowItWorks />
+      {/* <Footer /> */}
     </div>
   );
 }

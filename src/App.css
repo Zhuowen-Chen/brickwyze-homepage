@@ -414,4 +414,81 @@ a {
 }
 
 
+/* How It Works */
+.how-it-works-wrapper {
+  padding: 20px;
+  background-color: #fff;
+}
+
+.section-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #f9d2d2;
+  display: inline-block;
+  padding-bottom: 4px;
+}
+
+.how-it-works-container {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.map-section {
+  flex: 1;
+  min-width: 300px;
+}
+
+.map-image {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.steps-section {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.step-box {
+  padding: 16px;
+  border-radius: 8px;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.dashed-border {
+  border: 2px dashed #ccc;
+}
+
+.result-box {
+  background-color: #fddede;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.arrow-icon {
+  width: 24px;
+  height: 24px;
+  margin: 10px auto;
+}
+
+.step-icon {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 8px;
+}
+
+.arrow {
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+
 /* 其他组件样式... */

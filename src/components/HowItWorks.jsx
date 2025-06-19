@@ -3,7 +3,7 @@ import map from '../assets/images/map.png'
 import icon1 from '../assets/icons/process1.png'
 import icon2 from '../assets/icons/process2.png'
 import icon3 from '../assets/icons/process3.png'
-import icon4 from '../assets/icons/'
+import icon4 from '../assets/icons/downArrow.png'
 
 const HowItWorks = () => {
     return (
@@ -25,7 +25,21 @@ const HowItWorks = () => {
                         <p>Tell us your industry, budget, and location preferences</p>
                     </div>
 
-                    <div className="arrow"
+                    <img src={icon4} alt="down Arrow" className="arrow-icon" />
+
+                    <div className="step-box dashed-border">
+                        <img src={icon2} alt="Data Processing Icon" className="step-icon" />
+                        <h3>Data Processing</h3>
+                        <p>Our algorithm analyzes millions of data points instantly</p>
+                    </div>
+
+                    <img src={icon4} alt="down Arrow" className="arrow-icon" />
+
+                    <div className="step-box result-box">
+                        <img src={icon3} alt="Get Results Icon" className="step-icon" />
+                        <h3>Get Results</h3>
+                        <p>Receive your resilience score and top location recommendations</p>
+                    </div>
                 </div>
             </div>
         </div>
