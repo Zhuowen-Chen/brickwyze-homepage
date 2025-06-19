@@ -40,7 +40,7 @@ const WhyChooseUs = () => {
                         <div className="card-content">
                             <h3>{card.title}</h3>
                             <p>{card.text}</p>
-                            <a href="/"> {card.link}{" "} <img src={rightArrow} alt="arrow" className="arrow-icon" />
+                            <a href="/"> {card.link}{" "} <img src={rightArrow} alt="arrow" className="right-arrow" />
                             </a>
                         </div>
                     </div>
