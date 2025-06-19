@@ -1,5 +1,5 @@
 import React from "react";
-import map from '../assets/images/map.png'
+// import map from '../assets/images/map.png'
 import icon1 from '../assets/icons/process1.png'
 import icon2 from '../assets/icons/process2.png'
 import icon3 from '../assets/icons/process3.png'
