@@ -8,7 +8,7 @@ import WhoWeAre from './components/WhoWeAre';
 import Welcome from './components/Welcome';
 import WhyChooseUs from './components/WhyChooseUs';
 import HowItWorks from './components/HowItWorks';
-// import Footer from './components/Footer';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -19,7 +19,7 @@ function App() {
       <Welcome />
       <WhyChooseUs />
       <HowItWorks />
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }
