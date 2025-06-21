@@ -1,4 +1,4 @@
-/* Base CSS */
+/* Base Structure CSS */
 body {
   margin: 0;
   font-family: 'Arial', sans-serif;
@@ -16,7 +16,7 @@ body {
 
 .nav-left, .nav-right {
   display: flex;
-  gap: 2rem; /* 控制链接间距 */
+  gap: 2rem;
 }
 
 .nav-center .logo {
@@ -32,7 +32,7 @@ a {
 }
 
 .login-btn {
-  color: #FE4A2C; /* 设计图中 Login/Register 可能是突出颜色 */
+  color: #FE4A2C; 
   font-weight: bold;
 }
 
@@ -41,7 +41,7 @@ a {
   position: relative;
   text-align: center;
   width: 100%;
-  height: 800px; /* 可按需调整 */
+  height: 800px;
   overflow: hidden;
 }
 
@@ -66,7 +66,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 40px; /* 对应 Auto Layout 中的 gap:10 + padding 距离 */
+  gap: 40px;
   padding: 20px;
 }
 
@@ -74,7 +74,7 @@ a {
 .hero-content h1 {
   font-family: 'Abril Fatface', serif;
   font-size: 55px;
-  font-size: clamp(25px, 50px, 65px); /* 在 25px 和 55px 之间动态变化 */
+  font-size: clamp(25px, 50px, 65px); 
   color: black;
   font-weight: bold;
   text-shadow: 3px 2px 2px rgba(0, 0, 0, 0.3);
@@ -195,7 +195,7 @@ a {
   box-shadow: 4px 3px 4px #FF4A2E;
   position: relative;
   z-index: 2;
-  margin-right: -10%; /* 让卡片向右延伸覆盖部分图片 */
+  margin-right: -10%; 
   margin-left: 8rem;
 }
 
@@ -648,7 +648,7 @@ a {
   justify-content: space-between;
   margin-left: 20px;
   flex: 1;
-  padding: 0 2rem; /* 保证两边留边 */
+  padding: 0 2rem; 
 }
 
 
@@ -694,7 +694,7 @@ a {
 .footer-help::after {
   content: '';
   position: absolute;
-  bottom: -8px; /* 原来是0，往下拉远离文字 */
+  bottom: -8px; 
   left: 0;
   width: 218px;
   height: 1px;
