@@ -782,3 +782,49 @@ a {
     gap: 1rem;
   }
 }
+
+/* Login */
+.login-page {
+  background-color: #fcded6;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-card {
+  background: white;
+  padding: 2rem;
+  box-shadow: 12px 12px 0 #ff4d25;
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+.login-form input {
+  display: block;
+  width: 100%;
+  margin: 1rem 0;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+}
+
+.login-button {
+  background-color: #ff4d25;
+  color: white;
+  padding: 0.75rem;
+  width: 100%;
+  font-weight: bold;
+  border: none;
+}
+
+.register-button {
+  margin-top: 1rem;
+  border: 2px solid black;
+  padding: 0.75rem;
+  width: 100%;
+  font-weight: bold;
+  background: white;
+}
+

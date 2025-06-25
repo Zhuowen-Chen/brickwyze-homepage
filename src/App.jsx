@@ -2,6 +2,8 @@
 
 // src/App.jsx
 import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import WhoWeAre from './components/WhoWeAre';
@@ -9,10 +11,11 @@ import Welcome from './components/Welcome';
 import WhyChooseUs from './components/WhyChooseUs';
 import HowItWorks from './components/HowItWorks';
 import Footer from './components/Footer';
+import Login from './components/Login';
 
-function App() {
+function Homepage() {
   return (
-    <div className="App">
+    <>
       <Navbar />
       <Hero />
       <WhoWeAre />
@@ -20,6 +23,19 @@ function App() {
       <WhyChooseUs />
       <HowItWorks />
       <Footer />
+    </>
+  );
+}
+
+function App() {
+  return (
+    <div className="App">
+      <Router>
+        <Routes>
+          <Route path="/" element={<Homepage />} />
+          <Route path="/login" element={<Login />} />
+        </Routes>
+      </Router>
     </div>
   );
 }
