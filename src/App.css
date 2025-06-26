@@ -785,7 +785,7 @@ a {
 
 /* Login */
 .login-page {
-  background-color: #fcded6;
+  background-color: #FFD9D3;
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -793,16 +793,19 @@ a {
   font-family: 'Simonetta', serif;
 }
 
-.logo-title {
+.login-title {
   font-family: 'Simonetta', serif;
   font-weight: bold;
+  font-size: 30px;
   font-style: italic;
   color: #FE4A2C;
+  margin-top: -5px;
 }
 
-.logo-subtitle {
+.login-subtitile {
   font-family: 'Simonetta', serif;
-
+  font-size: 20px;
+  color: #999;
 }
 
 .login-card {
@@ -837,6 +840,7 @@ a {
   height: 20px;
   margin-right: 0.75rem;
   opacity: 0.6;
+  fill: #818181;
 }
 
 .input-icon-group input {
@@ -846,6 +850,12 @@ a {
   font-size: 1rem;
   width: 100%;
   font-family: 'Simonetta', serif;
+  color: #818181;
+}
+
+.input-icon-group input::placeholder {
+  color: #aaa;
+  opacity: 1;
 }
 
 .forgot-password {
@@ -879,5 +889,6 @@ a {
   padding: 0.75rem;
   width: 100%;
   background: white;
+  color: #808080;
 }
 

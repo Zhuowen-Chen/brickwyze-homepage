@@ -1,7 +1,7 @@
 import React from "react";
 import logo from '../assets/images/logo3.png';
-import username from '../assets/icons/username.svg';
-import password from '../assets/icons/password.svg';
+import { ReactComponent as UsernameIcon } from '../assets/icons/username.svg';
+import { ReactComponent as PasswordIcon } from '../assets/icons/password.svg';
 
 const Login = () => {
   return (
@@ -12,12 +12,12 @@ const Login = () => {
             <p className="login-subtitile">Sign in to your account</p>
             <form className="login-form">
                 <div className="input-icon-group">
-                    <img src={username} alt="Username Icon" className="input-icon" />
+                    <UsernameIcon className="input-icon" />
                     <input type="text" placeholder="Username/Email" />
                 </div>
                 
                 <div className="input-icon-group">
-                    <img src={password} alt="Password Icon" className="input-icon" />
+                    <PasswordIcon className="input-icon" />
                     <input type="password" placeholder="Password" />
                 </div>
                 
