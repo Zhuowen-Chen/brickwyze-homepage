@@ -790,14 +790,28 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: 'Simonetta', serif;
+}
+
+.logo-title {
+  font-family: 'Simonetta', serif;
+  font-weight: bold;
+  font-style: italic;
+  color: #FE4A2C;
+}
+
+.logo-subtitle {
+  font-family: 'Simonetta', serif;
+
 }
 
 .login-card {
   background: white;
   padding: 2rem;
-  box-shadow: 12px 12px 0 #ff4d25;
+  box-shadow: 12px 12px 0 #FF492C;
   max-width: 400px;
-  width: 100%;
+  width: 570px;
+  height: 480px;
   text-align: center;
 }
 
@@ -805,34 +819,65 @@ a {
   width: 60px;
   height: 60px;
   object-fit: contain;
-  margin: 0 auto 1.5rem auto; /* 上0 右auto 下1.5rem 左auto => 水平居中且底部有间距 */
+  margin: 0 auto 1rem auto; 
   display: block;
 }
 
-.login-form input {
-  display: block;
-  width: 100%;
-  margin: 1rem 0;
-  padding: 0.75rem;
+.input-icon-group {
+  display: flex;
+  align-items: center;
+  background-color: #f8f8f8;
   border: 1px solid #ddd;
+  padding: 0.75rem;
+  margin: 1rem 0;
+}
+
+.input-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 0.75rem;
+  opacity: 0.6;
+}
+
+.input-icon-group input {
+  border: none;
+  outline: none;
+  background: transparent;
   font-size: 1rem;
+  width: 100%;
+  font-family: 'Simonetta', serif;
+}
+
+.forgot-password {
+  text-align: right;
+  display: block;
+  font-size: 0.8rem;
+  color: #999;
+  text-decoration: underline;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .login-button {
-  background-color: #ff4d25;
-  color: white;
-  padding: 0.75rem;
-  width: 100%;
+  background-color: #FF492C;
+  font-family: 'Simonetta', serif;
+  font-size: large;
   font-weight: bold;
+  color: white;
+  margin-top: 10px;
+  padding: 1rem;
+  width: 100%;
   border: none;
 }
 
 .register-button {
+  font-family: 'Simonetta', serif;
+  font-size: large;
+  font-weight: bold;
   margin-top: 1rem;
-  border: 2px solid black;
+  border: 1px solid black;
   padding: 0.75rem;
   width: 100%;
-  font-weight: bold;
   background: white;
 }
 

@@ -1,5 +1,7 @@
 import React from "react";
-import logo from '../assets/images/logo1.png';
+import logo from '../assets/images/logo3.png';
+import username from '../assets/icons/username.svg';
+import password from '../assets/icons/password.svg';
 
 const Login = () => {
   return (
@@ -9,8 +11,16 @@ const Login = () => {
             <h2 className="login-title">Login</h2>
             <p className="login-subtitile">Sign in to your account</p>
             <form className="login-form">
-                <input type="text" placeholder="Username/Email" />
-                <input type="password" placeholder="Password" />
+                <div className="input-icon-group">
+                    <img src={username} alt="Username Icon" className="input-icon" />
+                    <input type="text" placeholder="Username/Email" />
+                </div>
+                
+                <div className="input-icon-group">
+                    <img src={password} alt="Password Icon" className="input-icon" />
+                    <input type="password" placeholder="Password" />
+                </div>
+                
                 <a href="#" className="forgot-password">Forgot password?</a>
                 <button type="submit" className="login-button">Login</button>
                 <button type="button" className="register-button">Register New Account</button>
