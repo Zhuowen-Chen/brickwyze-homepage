@@ -800,6 +800,7 @@ a {
   font-style: italic;
   color: #FE4A2C;
   margin-top: -5px;
+  margin-bottom: -8px;
 }
 
 .login-subtitile {
@@ -816,6 +817,7 @@ a {
   width: 570px;
   height: 480px;
   text-align: center;
+  margin-top: -80px;
 }
 
 .login-card-logo {
