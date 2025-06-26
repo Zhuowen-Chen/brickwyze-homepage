@@ -21,7 +21,8 @@ const Login = () => {
                     <input type="password" placeholder="Password" />
                 </div>
                 
-                <a href="#" className="forgot-password">Forgot password?</a>
+                <a href="/forget-password" className="forgot-password">Forgot password?</a>
+                
                 <button type="submit" className="login-button">Login</button>
                 <button type="button" className="register-button">Register New Account</button>
             </form>
