@@ -16,7 +16,6 @@ import Login from './components/Login';
 function Homepage() {
   return (
     <>
-      <Navbar />
       <Hero />
       <WhoWeAre />
       <Welcome />
@@ -29,14 +28,16 @@ function Homepage() {
 
 function App() {
   return (
-    <div className="App">
-      <Router>
+    <Router>
+      {/* Navbar is outside the Router and is only displayed once. All pages will have it */}
+      <Navbar />
+      <div className="App">
         <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path="/login" element={<Login />} />
         </Routes>
-      </Router>
-    </div>
+      </div>
+    </Router>
   );
 }
 

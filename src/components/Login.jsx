@@ -5,12 +5,7 @@ const Login = () => {
   return (
     <div className="login-page">
         <div className="login-card">
-            <div className="nav-left">
-                <a href="/">Home</a>
-                <a href="/">About</a>
-                <a href="/">Help</a>
-            </div>
-            
+            <img src={logo} alt="BrickWyze Logo" className='login-card-logo' />  
             <h2 className="login-title">Login</h2>
             <p className="login-subtitile">Sign in to your account</p>
             <form className="login-form">

@@ -801,6 +801,14 @@ a {
   text-align: center;
 }
 
+.login-card-logo {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  margin: 0 auto 1.5rem auto; /* 上0 右auto 下1.5rem 左auto => 水平居中且底部有间距 */
+  display: block;
+}
+
 .login-form input {
   display: block;
   width: 100%;
