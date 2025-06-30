@@ -38,8 +38,8 @@ const Login = () => {
                 <div className="input-icon-group">
                     <UsernameIcon className="input-icon" />
                     <input 
-                        type="email" 
-                        placeholder="email"
+                        type="Email" 
+                        placeholder="Email"
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
                     />
