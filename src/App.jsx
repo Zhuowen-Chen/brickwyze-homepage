@@ -1,8 +1,9 @@
 // start react: bash -> cd brickwyze-homepage -> npm start
 
-// src/App.jsx
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { useEffect } from 'react';
+import { supabase } from './supabaseClient'; // Introducing the supabase client
 
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
@@ -27,6 +28,23 @@ function Homepage() {
 }
 
 function App() {
+  useEffect(() => {
+    async function checkSession() {
+      const { data: { session } } = await supabase.auth.getSession();
+      console.log('Current session:', session);
+    }
+
+    checkSession();
+
+    const { data: authListener } = supabase.auth.onAuthStateChange((event, session) => {
+      console.log('Auth event:', event, session);
+    });
+
+    return () => {
+      authListener.subscription.unsubscribe();
+    };
+  }, []);
+
   return (
     <Router>
       {/* Navbar is outside the Router and is only displayed once. All pages will have it */}
