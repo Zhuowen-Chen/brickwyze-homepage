@@ -13,6 +13,7 @@ import WhyChooseUs from './components/WhyChooseUs';
 import HowItWorks from './components/HowItWorks';
 import Footer from './components/Footer';
 import Login from './components/Login';
+import Register from './components/Register';
 
 function Homepage() {
   return (
@@ -53,6 +54,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
         </Routes>
       </div>
     </Router>

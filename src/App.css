@@ -880,12 +880,14 @@ a {
   background: white;
   padding: 2rem;
   box-shadow: 12px 12px 0 #FF492C;
+  width: 90%;
   max-width: 400px;
-  width: 570px;
-  height: 480px;
+  height: auto;
   text-align: center;
   margin-top: -80px;
+  box-sizing: border-box;
 }
+
 
 .login-card-logo {
   width: 60px;
@@ -961,4 +963,25 @@ a {
   background: white;
   color: #808080;
 }
+
+@media (max-width: 480px) {
+  .login-card {
+    padding: 1.5rem;
+    box-shadow: 6px 6px 0 #FF492C;
+  }
+
+  .login-title {
+    font-size: 24px;
+  }
+
+  .login-subtitile {
+    font-size: 16px;
+  }
+
+  .login-button, .register-button {
+    font-size: medium;
+    padding: 0.75rem;
+  }
+}
+
 
